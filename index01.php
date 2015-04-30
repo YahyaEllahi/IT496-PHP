@@ -39,7 +39,7 @@ if ($result -> num_rows >0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
         //calling removeTimeStamp function to remove timestamp from it, leaving behind on the date
-        echo "<tr><td>".$row["Inventory_Id"]."</td><td>".$row["Part_Number"]."</td><td>".$row["Description"]."</td><td>".$row["Quantity"]."</td><td>".$row["Price"]."</td><td>".removeTimeStamp($row["Date_Yahya"])."</td></tr>";
+        echo "<tr><td>".$row["Inventory_Id"]."</td><td>".$row["Part_Number"]."</td><td>".$row["Description"]."</td><td>".$row["Quantity"]."</td><td>".$row["Price"]."</td><td>".removeTimeStamp($row["Date_Updated"])."</td></tr>";
     }
     echo "</table>";
 } else {
