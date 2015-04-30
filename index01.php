@@ -15,7 +15,7 @@ $result = $db -> query("SELECT * FROM inventory");
 changeColumnName($db);
 //change column name of date_received column to date_updated
 function changeColumnName($db){
-        $db->query("ALTER TABLE `inventory` CHANGE `Date_Updated` `Date_Yahya` VARCHAR(255);");
+        $db->query("ALTER TABLE `inventory` CHANGE `Date_Received` `Date_Updated` VARCHAR(255);");
     }
 
 //call the function
